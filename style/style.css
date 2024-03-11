@@ -29,7 +29,7 @@
   max-width: 611px;
 }
 
-.nav-itemlink {
+.nav-item__link {
   display: block;
   font-size: 16px;
   text-decoration: none;
@@ -37,31 +37,32 @@
   letter-spacing: 0.1em;
 }
 
-.nav-itemlink:hover {
+.nav-item__link:hover {
   color: #34547A;
 }
 
-.nav-itemlink_main {
+.nav-item__link--main {
   text-decoration: none;
   color: #34547A;
   letter-spacing: 0.1em;
 }
 
-.design-header {
+.design__header {
   font-size: 3rem;
   font-weight: 500;
   line-height: 78px;
   margin-bottom: 60px;
 }
 
-.design-text {
+.design__text {
   color: #727272;
   max-width: 540px;
   line-height: 24px;
   margin-bottom: 65px;
 }
 
-.button {
+.design__button {
+  border: 0;
   min-width: 225px;
   min-height: 65px;
   background-color: #34547A;
@@ -85,15 +86,14 @@
   padding: 0px 30px;
 }
 
-.about-header {
+.about__header {
   font-size: 32px;
   text-align: center;
-  font-weight: 500;
   margin-bottom: 50px;
   line-height: 37.5px;
 }
 
-.about-text {
+.about__text {
   text-align: center;
   line-height: 26px;
 }
@@ -142,13 +142,13 @@
   text-align: center;
 }
 
-.work-header_title {
+.work-header__title {
   font-size: 32px;
   line-height: 37.5px;
   margin-bottom: 50px;
 }
 
-.work-header_text {
+.work-header__text {
   color: #727272;
   line-height: 26px;
 }
@@ -160,6 +160,7 @@
 }
 
 .video__iframe {
+  border: 0;
   width: 100%;
 }
 
