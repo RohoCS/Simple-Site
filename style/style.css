@@ -26,7 +26,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 611px;
 }
 
 .nav-item__link {
@@ -45,6 +44,12 @@
   text-decoration: none;
   color: #34547A;
   letter-spacing: 0.1em;
+}
+
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .design__header {
@@ -183,50 +188,97 @@
 }
 
 /* media */
-
-@media (max-width: 600px) {
-  .header {
-    min-height: 0px;
-  }
-
-  .navbar {
-    margin-bottom: 72px;
-  }
+@media (min-width: 768.8px) {
 
   .nav-cont {
-    flex-direction: column;
-    text-align: center;
-    gap: 5px;
+    max-width: 611px;
   }
 
-  .design {
-    text-align: center;
-  }
-
-  .design-header {
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-
-  .design-text {
-    margin-bottom: 30px;
-  }
-
-  .button {
-    min-width: 140px;
-    min-height: 33px;
-    font-size: 13px;
-  }
-
-  .video__iframe {
-    max-height: 300px;
+  .design__text {
+    max-width: 540px;
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 992px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 80px
+  }
+
+  .about__header {
+    margin-bottom: 40px;
+  }
+
   .project-container {
-    padding: 50px 0;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+  }
+
+  .project-item {
+    justify-content: center;
+    flex-basis: 25%;
+  }
+
+  .work-header {
+    padding: 60px 30px 40px;
+  }
+
+  .work-header__title {
+    margin-bottom: 40px;
+  }
+
+  .work-video {
+    padding-bottom: 60px;
+  }
+
+
+
+  .video__iframe {
+    height: 500px;
+  }
+
+  .footer {
+    padding: 30px 0;
+    min-height: 120px;
+  }
+
+  .footer__bg {
+    font-size: 16px;
+  }
+
+  .footer__sm {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 600px;
+    padding: 50px 0px;
+  }
+
+  .navbar {
+    margin-bottom: 100px;
+  }
+
+  .nav-cont {
+    justify-content: center;
+    gap: 20px 40px;
+  }
+
+  .video__iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .design {
+    text-align: center;
+    align-items: center;
+  }
+
+  .video__iframe {
+    height: 250px;
   }
 }
