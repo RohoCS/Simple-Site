@@ -1,0 +1,41 @@
+.navbar {
+  margin-bottom: 162px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+}
+
+.nav-cont {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: 768.8px) {
+    max-width: 611px;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    gap: 20px 40px;
+  }
+}
+
+.nav-item__link {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.1em;
+
+  &:hover {
+    color: #34547a;
+  }
+
+  &--main {
+    text-decoration: none;
+    color: #34547a;
+    letter-spacing: 0.1em;
+  }
+}
