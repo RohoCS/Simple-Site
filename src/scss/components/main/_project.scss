@@ -1,0 +1,40 @@
+.project {
+  min-height: 250px;
+  background-color: #34547a;
+  color: white;
+
+  &__container {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+      gap: 30px;
+      padding: 50px 0px;
+    }
+  }
+}
+
+.project-item {
+  display: flex;
+  gap: 20px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__number {
+    font-size: 21px;
+  }
+
+  @media (max-width: 992px) {
+    justify-content: center;
+    flex-basis: 25%;
+  }
+}
